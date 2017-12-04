@@ -1,6 +1,6 @@
 <img src='http://bit.ly/1eze8aE' style='border: dashed cyan;'>
-<h1> "Hi there my name is <%= @name = 'Tom' if @name.nil? %>" </h1>
+<h1> "Hi there my name is <%= @name.empty? ? @name = 'Tom' : @name %>" </h1>
 <form action='http://localhost:9393/named-cat' method='post'>
 <input type='text' name='name'>
-<input type='submit' value='Submit'>
+<input type='submit' value='submit'>
 </form>
